@@ -65,7 +65,7 @@ These Gems are direct or indirect dependencies of an as-generated skeleton app f
 | [`http_router`](https://rubygems.org/gems/http_router) | 0.11.2 |
 | [`ice_nine`](https://rubygems.org/gems/ice_nine) | 0.11.2 |
 | [`inflecto`](https://rubygems.org/gems/inflecto) | 0.0.2 |
-| [`mail`](https://rubygems.org/gems/mail) | 2.7.0 --no-doc |
+| [`mail`](https://rubygems.org/gems/mail) | 2.7.0 |
 | [`minitest`](https://rubygems.org/gems/minitest) | 5.10.3 |
 | [`rake`](https://rubygems.org/gems/rake) | 12.3.0 |
 | [`rom-mapper`](https://rubygems.org/gems/rom-mapper) | 0.5.1 |
