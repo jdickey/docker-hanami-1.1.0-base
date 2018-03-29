@@ -1,0 +1,264 @@
+metadata:
+  image_version: 0.11.1
+  hanami_version: 1.1.1
+  hanami_model_version: 1.1.0
+builds:
+  2.5.0:
+    alpine3.7:
+      hm:
+        qt:
+          tags:
+          - '2.5-alpine3.7-hm-qt'
+          - '2-alpine3.7-hm-qt'
+          - 'alpine3.7-hm-qt'
+          - '2.5.0-alpine3.7'
+          - '2.5-alpine3.7'
+          - '2-alpine3.7'
+          - 'alpine3.7'
+          - '2.5.0-alpine37-hm-qt'
+          - '2.5-alpine37-hm-qt'
+          - '2-alpine37-hm-qt'
+          - 'alpine37-hm-qt'
+          - '2.5.0-alpine37'
+          - '2.5-alpine37'
+          - '2-alpine37'
+          - 'alpine37'
+          - '2.5.0-alpine-hm-qt'
+          - '2.5-alpine-hm-qt'
+          - '2-alpine-hm-qt'
+          - 'alpine-hm-qt'
+          - '2.5.0-alpine'
+          - '2.5-alpine'
+          - '2-alpine'
+          - 'alpine'
+        no-qt:
+          tags:
+          - '2.5-alpine3.7-hm-no-qt'
+          - '2-alpine3.7-hm-no-qt'
+          - 'alpine3.7-hm-no-qt'
+          - '2.5.0-alpine3.7-no-qt'
+          - '2.5-alpine3.7-no-qt'
+          - '2-alpine3.7-no-qt'
+          - 'alpine3.7-no-qt'
+          - '2.5.0-alpine37-hm-no-qt'
+          - '2.5-alpine37-hm-no-qt'
+          - '2-alpine37-hm-no-qt'
+          - 'alpine37-hm-no-qt'
+          - '2.5.0-alpine37-no-qt'
+          - '2.5-alpine37-no-qt'
+          - '2-alpine37-no-qt'
+          - 'alpine37-no-qt'
+          - '2.5.0-alpine-hm-no-qt'
+          - '2.5-alpine-hm-no-qt'
+          - '2-alpine-hm-no-qt'
+          - 'alpine-hm-no-qt'
+          - '2.5.0-alpine-no-qt'
+          - '2.5-alpine-no-qt'
+          - '2-alpine-no-qt'
+          - 'alpine-no-qt'
+      no-hm:
+        qt:
+          tags:
+          - '2.5-alpine3.7-no-hm-qt'
+          - '2-alpine3.7-no-hm-qt'
+          - 'alpine3.7-no-hm-qt'
+          - '2.5.0-alpine3.7-no-hm'
+          - '2.5-alpine3.7-no-hm'
+          - '2-alpine3.7-no-hm'
+          - 'alpine3.7-no-hm'
+          - '2.5.0-alpine37-no-hm-qt'
+          - '2.5-alpine37-no-hm-qt'
+          - '2-alpine37-no-hm-qt'
+          - 'alpine37-no-hm-qt'
+          - '2.5.0-alpine37-no-hm'
+          - '2.5-alpine37-no-hm'
+          - '2-alpine37-no-hm'
+          - 'alpine37-no-hm'
+          - '2.5.0-alpine-no-hm-qt'
+          - '2.5-alpine-no-hm-qt'
+          - '2-alpine-no-hm-qt'
+          - 'alpine-no-hm-qt'
+          - '2.5.0-alpine-no-hm'
+          - '2.5-alpine-no-hm'
+          - '2-alpine-no-hm'
+          - 'alpine-no-hm'
+        no-qt:
+          tags:
+          - '2.5-alpine3.7-no-hm-no-qt'
+          - '2-alpine3.7-no-hm-no-qt'
+          - 'alpine3.7-no-hm-no-qt'
+          - '2.5.0-alpine37-no-hm-no-qt'
+          - '2.5-alpine37-no-hm-no-qt'
+          - '2-alpine37-no-hm-no-qt'
+          - 'alpine37-no-hm-no-qt'
+          - '2.5.0-alpine37-no-hm-no-qt'
+          - '2.5-alpine37-no-hm-no-qt'
+          - '2-alpine37-no-hm-no-qt'
+          - 'alpine37-no-hm-no-qt'
+          - '2.5.0-alpine-no-hm-no-qt'
+          - '2.5-alpine-no-hm-no-qt'
+          - '2-alpine-no-hm-no-qt'
+          - 'alpine-no-hm-no-qt'
+    stretch:
+      hm:
+        qt:
+          actual_latest: true
+          tags:
+          - '2.5.0-hm-qt'
+          - '2.5-stretch-hm-qt'
+          - '2.5-hm-qt'
+          - '2-stretch-hm-qt'
+          - '2-hm-qt'
+          - 'stretch-hm-qt'
+          - 'hm-qt'
+          - '2.5-stretch'
+          - '2-stretch'
+          - 'stretch'
+          - '2.5.0'
+          - '2.5'
+          - '2'
+        no-qt:
+          tags:
+          - '2.5.0-hm-no-qt'
+          - '2.5-stretch-hm-no-qt'
+          - '2.5-hm-no-qt'
+          - '2-stretch-hm-no-qt'
+          - '2-hm-no-qt'
+          - 'hm-no-qt'
+          - 'stretch-hm-no-qt'
+          - 'stretch-no-qt'
+          - 'no-qt'
+      no-hm:
+        qt:
+          tags:
+          - '2.5.0-no-hm-qt'
+          - '2.5-stretch-no-hm-qt'
+          - '2.5-no-hm-qt'
+          - '2-stretch-no-hm-qt'
+          - '2-no-hm-qt'
+          - 'stretch-no-hm-qt'
+          - 'no-hm-qt'
+          - 'stretch-no-hm'
+        no-qt:
+          tags:
+          - '2.5.0-no-hm-no-qt'
+          - '2.5-stretch-no-hm-no-qt'
+          - '2.5-no-hm-no-qt'
+          - '2-stretch-no-hm-no-qt'
+          - '2-no-hm-no-qt'
+          - 'stretch-no-hm-no-qt'
+          - 'no-hm-no-qt'
+    slim-stretch:
+      hm:
+        qt:
+          tags:
+          - '2.5.0-slim-hm-qt'
+          - '2.5-slim-stretch-hm-qt'
+          - '2.5-slim-hm-qt'
+          - '2-slim-stretch-hm-qt'
+          - '2-slim-hm-qt'
+          - '2-slim-stretch-hm-qt'
+          - '2-slim-hm-qt'
+          - 'slim-stretch-hm-qt'
+          - 'slim-hm-qt'
+          - '2.5-slim-stretch'
+          - '2-slim-stretch'
+          - 'slim-stretch'
+          - '2.5.0-slim'
+          - '2.5-slim'
+          - '2-slim'
+          - 'slim'
+        no-qt:
+          tags:
+          - '2.5.0-slim-hm-no-qt'
+          - '2.5-slim-stretch-hm-no-qt'
+          - '2.5-slim-hm-no-qt'
+          - '2-slim-stretch-hm-no-qt'
+          - '2-slim-hm-no-qt'
+          - '2-slim-stretch-hm-no-qt'
+          - '2-slim-hm-no-qt'
+          - 'slim-stretch-hm-no-qt'
+          - 'slim-hm-no-qt'
+          - '2.5-slim-stretch-no-qt'
+          - '2-slim-stretch-no-qt'
+          - 'slim-stretch-no-qt'
+          - '2.5.0-slim-no-qt'
+          - '2.5-slim-no-qt'
+          - '2-slim-no-qt'
+          - 'slim-no-qt'
+      no-hm:
+        qt:
+          tags:
+          - '2.5.0-slim-no-hm-qt'
+          - '2.5-slim-stretch-no-hm-qt'
+          - '2.5-slim-no-hm-qt'
+          - '2-slim-stretch-no-hm-qt'
+          - '2-slim-no-hm-qt'
+          - '2-slim-stretch-no-hm-qt'
+          - '2-slim-no-hm-qt'
+          - 'slim-stretch-no-hm-qt'
+          - 'slim-no-hm-qt'
+          - 'slim-no-hm'
+          - '2.5-slim-stretch-no-hm'
+          - '2-slim-stretch-no-hm'
+          - 'slim-stretch-no-hm'
+        no-qt:
+          tags:
+          - '2.5.0-slim-no-hm-no-qt'
+          - '2.5-slim-stretch-no-hm-no-qt'
+          - '2.5-slim-no-hm-no-qt'
+          - '2-slim-stretch-no-hm-no-qt'
+          - '2-slim-no-hm-no-qt'
+          - 'slim-stretch-no-hm-no-qt'
+          - 'slim-no-hm-no-qt'
+  2.4.3:
+    jessie:
+      hm:
+        qt:
+          tags:
+            - '2.4-jessie-hm-qt'
+            - '2.4.3-hm-qt'
+            - '2.4.3'
+            - '2.4-hm-qt'
+            - '2.4'
+        no-qt:
+          tags:
+            - '2.4.jessie-hm-no-qt'
+            - '2.4.3-hm-no-qt'
+            - '2.4-hm-no-qt'
+      no-hm:
+        qt:
+          tags:
+            - '2.4-jessie-no-hm-qt'
+            - '2.4.3-no-hm-qt'
+            - '2.4-no-hm-qt'
+        no-qt:
+          tags:
+            - '2.4-jessie-no-hm-no-qt'
+            - '2.4.3-no-hm-no-qt'
+            - '2.4-no-hm-no-qt'
+    slim-jessie:
+      hm:
+        qt:
+          tags:
+            - '2.4-slim-jessie-hm-qt'
+            - '2.4.3-slim-hm-qt'
+            - '2.4-slim-hm-qt'
+            - '2.4.3-slim'
+            - '2.4-slim'
+        no-qt:
+          tags:
+            - '2.4-slim-jessie-hm-no-qt'
+            - '2.4.3-slim-hm-no-qt'
+            - '2.4-slim-hm-no-qt'
+      no-hm:
+        qt:
+          tags:
+            - '2.4-slim-jessie-no-hm-qt'
+            - '2.4.3-slim-no-hm-qt'
+            - '2.4-slim-no-hm-qt'
+        no-qt:
+          tags:
+            - '2.4-slim-jessie-no-hm-no-qt'
+            - '2.4.3-slim-no-hm-no-qt'
+            - '2.4-slim-no-hm-no-qt'

@@ -1,0 +1,51 @@
+#!/bin/bash
+gem install transproc -v 1.0.2
+gem install concurrent-ruby -v 1.0.5
+gem install hanami-utils -v 1.1.2
+
+gem install dry-configurable -v 0.7.0
+gem install dry-equalizer -v 0.2.0
+gem install dry-core -v 0.4.5
+gem install dry-container -v 0.6.0
+gem install dry-logic -v 0.4.2
+gem install inflecto -v 0.0.2
+# `dry-types` 0.12.2 by default for hamami, but `hanami-model`` locked to 0.11.x
+gem install dry-types -v 0.11.1
+gem install dry-validation -v 0.11.1
+gem install hanami-validations -v 1.1.0
+
+gem install rack -v 2.0.4
+gem install url_mount -v 0.2.1
+gem install http_router -v 0.11.2
+gem install hanami-router -v 1.1.1
+
+gem install hanami-controller -v 1.1.1
+
+gem install tilt -v 2.0.8
+gem install hanami-view -v 1.1.1
+
+gem install hanami-helpers -v 1.1.1
+
+gem install mini_mime -v 1.0.0
+# NOTE that Version 2.7.0 of `mail` **must** be installed using `--nodoc` or the
+#      Yard parser will raise a `SystemStackError`. Workaround is to specify
+#      `--no-doc` for the `mail` Gem.
+#      The issue https://github.com/mikel/mail/issues/1211 has been opened.
+gem install mail -v 2.7.0 --no-doc
+gem install hanami-mailer -v 1.1.0
+
+gem install hanami-assets -v 1.1.1
+
+gem install hanami-cli -v 0.1.1
+
+gem install hanami -v 1.1.1
+
+# for capybara, which requires Qt support for capybara-webkit
+
+gem install mini_portile2 -v 2.3.0
+gem install nokogiri -v 1.8.2
+gem install rack-test -v 0.8.3
+gem install xpath -v 3.0.0
+gem install public_suffix -v 3.0.2
+gem install addressable -v 2.5.2
+gem install capybara -v 2.18.0
