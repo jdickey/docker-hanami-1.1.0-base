@@ -3,8 +3,10 @@ LABEL maintainer="Jeff Dickey <jdickey at seven-sigma dot com>"
 LABEL description="Hanami app Gems base image based on Debian Jessie with Ruby 2.4.2, NOT including database driver, but including Qt and capybara-webkit"
 LABEL includesQt=true
 LABEL hanami-version='1.1.0'
-LABEL version="0.9.0"
-RUN gem install public_suffix -v 3.0.1 \
+LABEL version="0.12.0"
+RUN apt-get update -qq && apt-get dist-upgrade -y && apt-get install -y libpq-dev && apt-get clean \
+ && find /var/lib/apt/lists/* -delete \
+ && gem install public_suffix -v 3.0.1 \
  && gem install addressable -v 2.5.2 \
  && gem install mini_mime -v 1.0.0 \
  && gem install mini_portile2 -v 2.3.0 \

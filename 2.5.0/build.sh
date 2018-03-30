@@ -1,4 +1,8 @@
 #!/bin/bash
+set -euo pipefail
+IFS=$'\n\t'
+set -vx
+
 REPO_NAME=jdickey/hanami-1.1.0-base
 
 docker build --squash --tag $REPO_NAME:2.5.0-no-qt --file ./stretch/no-qt/Dockerfile .
@@ -43,9 +47,9 @@ docker tag $REPO_NAME:2.5.0-slim-no-qt $REPO_NAME:stretch-slim-no-qt
 
 docker tag $REPO_NAME:2.5.0-alpine $REPO_NAME:2.5-alpine
 docker tag $REPO_NAME:2.5.0-alpine $REPO_NAME:2-alpine
-docker tag $REPO_NAME:2.5.0-alpine $REPO_NAME:alpine
+# docker tag $REPO_NAME:2.5.0-alpine $REPO_NAME:alpine
 
 docker tag $REPO_NAME:2.5.0-alpine-no-qt $REPO_NAME:2.5-alpine-no-qt
 docker tag $REPO_NAME:2.5.0-alpine-no-qt $REPO_NAME:2-alpine-no-qt
-docker tag $REPO_NAME:2.5.0-alpine-no-qt $REPO_NAME:alpine-no-qt
+# docker tag $REPO_NAME:2.5.0-alpine-no-qt $REPO_NAME:alpine-no-qt
 unset REPO_NAME

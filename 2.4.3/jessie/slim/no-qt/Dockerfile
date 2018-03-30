@@ -1,14 +1,15 @@
-FROM jdickey/ruby:2.5.0-alpine-no-qt
+FROM jdickey/ruby:2.4.3-slim-no-qt
 LABEL maintainer="Jeff Dickey <jdickey at seven-sigma dot com>"
-LABEL description="Hanami app Gems base image based on Alpine with Ruby 2.5.0, NOT including Qt or capybara-webkit"
+LABEL description="Hanami app Gems base image based on slimmed-down Debian Jessie with Ruby 2.4.3, NOT including database driver, Qt or capybara-webkit"
 LABEL includesQt=false
+LABEL hanami-version='1.1.0'
 LABEL version="0.12.0"
-
 # Version 3.3.3 of `rom` depends on `dry-types` 0.12.2, but Version 1.1.0 of
 # `hanami-model` depends on `dry-types` 0.11.1. This will eventually get cleaned
 # up, upstream.
 
-RUN apk add --no-cache postgresql-dev \
+RUN apt-get update -qq && apt-get dist-upgrade -y && apt-get install -y libpq-dev && apt-get clean \
+ && find /var/lib/apt/lists/* -delete \
  && gem install rake -v 12.3.0 \
  && gem install mini_mime -v 1.0.0 \
  && gem install rack -v 2.0.3 \
@@ -47,7 +48,6 @@ RUN apk add --no-cache postgresql-dev \
  && gem install rom-sql -v 1.3.5 \
  && gem install hanami-model -v 1.1.0 \
  && gem install minitest -v 5.10.3 \
- && gem install pg -v 0.21.0 \
  && gem install shotgun -v 0.9.2 \
  && gem install temple -v 0.8.0 \
  && gem install slim -v 3.0.9 \

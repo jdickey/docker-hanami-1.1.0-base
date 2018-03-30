@@ -1,14 +1,16 @@
-FROM jdickey/ruby:2.4.2-slim-no-qt
+FROM jdickey/ruby:2.4.2-slim-jessie-no-qt
 LABEL maintainer="Jeff Dickey <jdickey at seven-sigma dot com>"
 LABEL description="Hanami app Gems base image based on slimmed-down Debian Jessie with Ruby 2.4.2, NOT including database driver, Qt or capybara-webkit"
 LABEL includesQt=false
 LABEL hanami-version='1.1.0'
-LABEL version="0.9.0"
+LABEL version="0.12.0"
 # Version 3.3.3 of `rom` depends on `dry-types` 0.12.2, but Version 1.1.0 of
 # `hanami-model` depends on `dry-types` 0.11.1. This will eventually get cleaned
 # up, upstream.
 
-RUN gem install rake -v 12.3.0 \
+RUN apt-get update -qq && apt-get dist-upgrade -y && apt-get install -y libpq-dev && apt-get clean \
+ && find /var/lib/apt/lists/* -delete \
+ && gem install rake -v 12.3.0 \
  && gem install mini_mime -v 1.0.0 \
  && gem install rack -v 2.0.3 \
  && gem install concurrent-ruby -v 1.0.5 \
