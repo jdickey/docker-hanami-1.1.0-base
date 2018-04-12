@@ -1,8 +1,7 @@
-FROM jdickey/ruby:2.4.3-no-qt
+FROM jdickey/ruby:2.5.1-no-qt
 LABEL maintainer="Jeff Dickey <jdickey at seven-sigma dot com>"
-LABEL description="Hanami app Gems base image based on Debian Jessie with Ruby 2.4.3, NOT including database driver, Qt or capybara-webkit"
+LABEL description="Hanami app Gems base image based on Debian Stretch with Ruby 2.5.1, NOT including Qt or capybara-webkit"
 LABEL includesQt=false
-LABEL hanami-version='1.1.0'
 LABEL version="0.13.0"
 
 RUN apt-get update -qq && apt-get dist-upgrade -y && apt-get clean && find /var/lib/apt/lists/* -delete \

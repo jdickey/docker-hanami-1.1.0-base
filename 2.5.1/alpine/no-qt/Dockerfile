@@ -1,6 +1,6 @@
-FROM jdickey/ruby:2.5.0-alpine-no-qt
+FROM jdickey/ruby:2.5.1-alpine-no-qt
 LABEL maintainer="Jeff Dickey <jdickey at seven-sigma dot com>"
-LABEL description="Hanami app Gems base image based on Alpine with Ruby 2.5.0, NOT including Qt or capybara-webkit"
+LABEL description="Hanami app Gems base image based on Alpine with Ruby 2.5.1, NOT including Qt or capybara-webkit"
 LABEL includesQt=false
 LABEL version="0.13.0"
 
